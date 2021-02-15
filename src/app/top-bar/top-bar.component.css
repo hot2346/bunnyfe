@@ -1,0 +1,16 @@
+.top-bar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #ee87b7ff;
+}
+
+.top-bar-logo {
+    width: 64px;
+    height: 64px;
+}
