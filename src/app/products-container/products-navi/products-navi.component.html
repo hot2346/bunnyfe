@@ -1,19 +1,19 @@
-<div class="products-navi">
-  <ng-container *ngFor="let primary_category of categories">
+<ng-container *ngFor="let primary_category of categories">
+  <div
+    class="category primary-category"
+    (click)="filterByCategory(primary_category.id)"
+  >
+    <span>{{ primary_category.name }}</span>
+    <span>{{ primary_category.matched_product_number}}</span>
+  </div>
+  <ng-container *ngIf="primary_category.secondary_categories">
     <div
-      class="category primary-category"
-      (click)="filterByCategory(primary_category.id)"
+      class="category secondary-category"
+      *ngFor="let secondary_category of primary_category.secondary_categories"
+      (click)="filterByCategory(secondary_category.id)"
     >
-      {{ primary_category.name }}
+    <span>{{ secondary_category.name }}</span>
+    <span>{{ secondary_category.matched_product_number}}</span>
     </div>
-    <ng-container *ngIf="primary_category.secondary_categories">
-      <div
-        class="category secondary-category"
-        *ngFor="let secondary_category of primary_category.secondary_categories"
-        (click)="filterByCategory(secondary_category.id)"
-      >
-        {{ secondary_category.name }}
-      </div>
-    </ng-container>
   </ng-container>
-</div>
+</ng-container>

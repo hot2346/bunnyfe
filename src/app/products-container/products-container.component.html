@@ -1,9 +1,13 @@
 <div class="products-container">
   <app-products-navi
+    class="products-navi"
     [categories]="categories"
     (category_id_to_filter)="filterProducts($event)"
   >
   </app-products-navi>
 
-  <app-products-displayer [products]="products"></app-products-displayer>
+  <app-products-displayer
+    class="products-displayer"
+    [products]="products"
+  ></app-products-displayer>
 </div>

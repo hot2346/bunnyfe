@@ -1,4 +1,9 @@
 .product {
     display: flex;
     flex-flow: column;;
+    flex-grow: 1;
+}
+
+.product-thumbnail-image {
+    width: 100%;
 }

@@ -1,5 +1,3 @@
-<div class="products-displayer">
-  <ng-container *ngFor="let product of products">
-    <app-product-main [product]="product"></app-product-main>
-  </ng-container>
-</div>
+<ng-container *ngFor="let product of products">
+  <app-product-main class="product-main" [product]="product"></app-product-main>
+</ng-container>

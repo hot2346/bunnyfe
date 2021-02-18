@@ -1,5 +1,19 @@
 .products-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  justify-content: space-between;
+}
+
+.products-navi {
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  padding: 4px 16px;
+}
+
+.products-displayer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
